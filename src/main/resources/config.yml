@@ -1,0 +1,46 @@
+item:
+    format: '&f[&b%name%%amount%&f]'
+    pattern:
+    - '[i]'
+    - '[item]'
+    - '<i>'
+    - '<item>'
+    air-format: "&f[&b%name%'s hand &ox0&f]"
+    air-hover:
+    - '&f%name% is as stupid,'
+    - "&fthat he's thinking"
+    - "&fhis hand is an item"
+
+mention:
+    format: '&b@%nick%'
+    hover:
+    - '&7Nick: &b%name%'
+    - '&7Konto: %vault_eco%'
+    - '{view:simplechat.ip}&7IP: &b%ip%'
+    insertion: '/msg %name%'
+    command: '/tpa %name%'
+    url: 'http://mcsurvi.pl/forum'
+
+# %name%, %displayname%, %ip%
+groups:
+    default:
+        format: 'prefix,nick,suffix,color,message'
+        modules:
+            prefix:
+                see-permission: 'simplechat.admin.prefix.see'
+                show-permission: 'simplechat.admin.prefix.show'
+                text: '%vault_prefix%'
+                hover: 
+                - '&7Rank: &b%vault_group%'
+            nick:
+                text: '%displayname%'
+                hover:
+                - '&7Nick: &b%name%'
+                - '&7Konto: %vault_eco%'
+                - '{view:simplechat.ip}&7IP: &b%ip%'
+                command: '/tpa %name%'
+                insertion: '/msg %name%'
+            suffix:
+                text: '%vault_suffix%'
+            color:
+                text: '&r &8&l>&7 '

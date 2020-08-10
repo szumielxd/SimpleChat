@@ -1,0 +1,11 @@
+name: SimpleChat
+version: 1.0.0
+main: me.szumielxd.SimpleChat.SimpleChat
+author: szumielxd
+api-version: 1.13
+softdepend: [LuckPerms, PermissionsEx, PlaceholderAPI, ProtocolLib, ProtocolSupport, Vault, ViaVersion, zPermissions]
+
+commands:
+  simplechat:
+    usage: asdasdasdasdasd
+    permission: simplechat.command.main
